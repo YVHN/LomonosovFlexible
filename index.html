@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/resetStyles.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/elements.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaQueris.css" />
+    <title>A. Lomonosov</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__inner">
+        <a href="#">
+          <img class="header__logo" src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+        <div class="header__menu menu">
+          <button class="menu__toggler" type="button" id="menuToggler">
+            <span></span>
+          </button>
+          <div class="menu__body container">
+            <nav class="menu__navigation">
+              <ul>
+                <li><a href="#" class="menu__link link">Intro</a></li>
+                <li>
+                  <a href="#" class="menu__link link">Escape to Moscow</a>
+                </li>
+                <li><a href="#" class="menu__link link">MGU</a></li>
+                <li><a href="#" class="menu__link link">Game</a></li>
+                <li>
+                  <a href="#" class="menu__link link">Activity</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__link link">Discoveries</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__link link">Patriotism</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__link link">Audiobook</a>
+                </li>
+                <li><a href="#" class="menu__link link">Clip</a></li>
+                <li><a href="#" class="menu__link link">Personal</a></li>
+                <li><a href="#" class="menu__link link">Death</a></li>
+                <li><a href="#" class="menu__link link">Merch</a></li>
+                <li><a href="#" class="menu__link link">Form</a></li>
+              </ul>
+            </nav>
+            <ul class="menu__contacts">
+              <li>
+                <a
+                  href="mailto:bestteameva444@gmail.com"
+                  class="menu__contact-link link"
+                >
+                  bestteameva444@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="menu__contact-link link"
+                  href="tel:+7 (444) 444-44-44"
+                >
+                  +7 (444) 444-44-44
+                </a>
+              </li>
+            </ul>
+            <ul class="menu__socials">
+              <li>
+                <a href="#" class="menu__social-link link">
+                  <img src="./assets/icons/socials/vk.svg" alt="VK" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu__social-link link">
+                  <img
+                    src="./assets/icons/socials/whatsapp.svg"
+                    alt="WhatsApp"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section container">
+        <div class="hero-section__inner">
+          <p class="hero-section__heading">
+            <span>Michael</span>
+            <span>Vasilyevich</span>
+            <span>Lomonosov</span>
+          </p>
+          <nav class="hero-section__navigation">
+            <ul class="hero-section__links">
+              <li class="hero-section__link">
+                <a href="#" class="link">Introduce</a>
+              </li>
+              <li class="hero-section__link">
+                <a href="#" class="link">Escape to Moscow</a>
+              </li>
+              <li class="hero-section__link">
+                <a href="#" class="link">Game</a>
+              </li>
+              <li class="hero-section__link">
+                <a href="#" class="link">Activity</a>
+              </li>
+              <li class="hero-section__link">
+                <a href="#" class="link">Audiobook</a>
+              </li>
+              <li class="hero-section__link">
+                <a href="#" class="link">Life</a>
+              </li>
+              <li class="hero-section__link">
+                <a href="#" class="link">Music video</a>
+              </li>
+            </ul>
+          </nav>
+          <custom-button
+            class="hero-section__button"
+            label="more about lomonosov"
+          ></custom-button>
+        </div>
+      </section>
+      <section class="info container"></section>
+    </main>
+    <script src="./js/customButton.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+class CustomButton extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+
+  static get observedAttributes() {
+    return ["label", "color", "size"];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    this.render();
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    const label = this.getAttribute("label") || "Кнопка";
+    const shadowColor = this.getAttribute("shadowColor") || "var(--c-primary)";
+
+    this.shadowRoot.innerHTML = `
+      <style>
+        .custom-button {
+            --shadow-size: clamp(5px, 0.463vmin, 40px);
+
+            position: relative;
+            height: clamp(60px, 5.556vmin, 120px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--c-primary);
+            background-color: var(--c-accent);
+            box-shadow: var(--shadow-size) var(--shadow-size) ${shadowColor};
+            font-size: 18px;
+            text-transform: uppercase;
+            font-family: var(--font-primary-o-1);
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            transition: box-shadow 0.15s ease, translate 0.15s ease;
+
+            &:hover {
+                translate: var(--shadow-size) var(--shadow-size);
+                box-shadow: 0px 0px ${shadowColor};
+            }
+        }
+
+        @media (max-width: 440px) {
+          .custom-button {
+            box-shadow: unset;
+          }
+        }
+      </style>
+      <button class="custom-button" type="button">${label}</button>
+    `;
+  }
+}
+
+customElements.define("custom-button", CustomButton);

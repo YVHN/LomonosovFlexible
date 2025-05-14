@@ -1,0 +1,15 @@
+:root {
+  --c-primary: #d8cfa9;
+  --c-additionaly: #0e0e0e;
+  --c-accent: #a43434;
+
+  --font-primary: "offbit";
+  --font-additionaly: "inter";
+  --font-primary-o-1: "offbit101";
+  --font-primary-o-2: "offbitdot";
+  --font-154: 14.259vmin;
+  --font-18: 1.667vmin;
+  --font-14: 14px;
+
+  --container-padding: clamp(10px, 3.704vmin, 40px);
+}

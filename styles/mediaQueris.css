@@ -1,0 +1,33 @@
+@media (max-width: 1151px) {
+  .header {
+    display: block;
+  }
+
+  .hero-section {
+    background-size: clamp(700px, 140%, 1530px) auto;
+  }
+
+  .hero-section__heading span {
+    margin-left: 0 !important;
+  }
+
+  .hero-section__inner {
+  }
+
+  .hero-section__navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-section__button {
+    width: 100%;
+  }
+
+  .custom-button {
+  }
+
+  .hero-section__heading {
+    bottom: 40.185vmin;
+  }
+}
