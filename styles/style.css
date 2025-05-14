@@ -52,6 +52,8 @@ body {
     background: url("../assets/images/heroSection/pixelFooter.png");
     z-index: 3;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
