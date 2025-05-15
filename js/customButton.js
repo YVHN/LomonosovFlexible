@@ -26,7 +26,7 @@ class CustomButton extends HTMLElement {
             --shadow-size: clamp(5px, 0.463vmin, 40px);
 
             position: relative;
-            height: clamp(60px, 5.556vmin, 120px);
+            height: clamp(60px, 3.125vw, 120px);
             display: flex;
             justify-content: center;
             align-items: center;

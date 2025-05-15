@@ -8,7 +8,7 @@
   }
 
   .hero-section__heading {
-    --font-154: 15vmin;
+    --font-154: 14.6vw;
 
     span {
       margin-left: 0 !important;
@@ -28,7 +28,6 @@
 @media (max-width: 768px) {
   :root {
     --container-padding: 10px;
-    --font-154: 15vmin;
   }
 
   .about__img {
@@ -38,17 +37,18 @@
   .hero-section__heading {
     line-height: 90%;
   }
+
+  .hero-section {
+    height: clamp(80vh, 63vw, 3000px);
+  }
+
+  .about__heading {
+    text-align: unset;
+  }
 }
 
 @media (max-width: 440px) {
   .hero-section__button {
     width: 100%;
-  }
-
-  .custom-button {
-  }
-
-  .hero-section__heading {
-    bottom: 40.185vmin;
   }
 }
