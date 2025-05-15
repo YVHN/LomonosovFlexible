@@ -1,17 +1,11 @@
 @media (max-width: 1279px) {
-  .hero-section__inner {
-    background-size: 100vh auto;
-  }
 }
 
 @media (max-width: 768px) {
   :root {
     --container-padding: 10px;
-    --font-154: clamp(50px, 15.6vw, 100px);
-  }
-
-  .hero-section__inner {
-    background-size: 90vh auto;
+    --font-154: clamp(40px, 15.6vw, 100px);
+    --heading-margin-md: 0px;
   }
 
   .about__img {
@@ -41,10 +35,44 @@
   .hero-section__navigation {
     display: none;
   }
+
+  .intro__video {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .intro__inner,
+  .escape__inner {
+    padding-top: 24px;
+  }
+
+  .intro__arrow {
+    color: var(--c-primary);
+  }
 }
 
 @media (max-width: 440px) {
   .hero-section__button {
     width: 100%;
+  }
+
+  .intro__video {
+    height: calc(100vw - 20px);
+  }
+
+  .hero-section {
+    padding-top: 120px;
+  }
+
+  .hero-section__inner {
+    background-size: 700px;
+  }
+
+  .escape__web {
+    width: 300vw;
+    top: 55%;
+    left: 85%;
   }
 }

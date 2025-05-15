@@ -32,7 +32,7 @@
               <ul>
                 <li><a href="#intro" class="menu__link link">Intro</a></li>
                 <li>
-                  <a href="#" class="menu__link link">Escape to Moscow</a>
+                  <a href="#escape" class="menu__link link">Escape to Moscow</a>
                 </li>
                 <li><a href="#" class="menu__link link">MGU</a></li>
                 <li><a href="#" class="menu__link link">Game</a></li>
@@ -106,7 +106,7 @@
                 <a href="#intro" class="link">Introduce</a>
               </li>
               <li class="hero-section__link">
-                <a href="#" class="link">Escape to Moscow</a>
+                <a href="#escape" class="link">Escape to Moscow</a>
               </li>
               <li class="hero-section__link">
                 <a href="#" class="link">Game</a>
@@ -147,6 +147,7 @@
           <source srcset="./assets/images/about/full.png" type="image/png" />
           <img
             class="about__img"
+            draggable="false"
             src="image-fallback.jpg"
             alt="Картинка для всех устройств"
           />
@@ -166,19 +167,79 @@
               Discovery
             </p>
           </div>
-          <p class="into__tape">
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-            <span>watch</span>
-          </p>
+          <div class="intro__video">
+            <p class="intro__tape">
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+              <span>watch</span>
+            </p>
+            <img
+              src="./assets/images/intro/picture1.png"
+              class="intro__img intro__img--1"
+              draggable="false"
+            />
+            <img
+              src="./assets/images/intro/picture2.png"
+              class="intro__img intro__img--2"
+              draggable="false"
+            />
+            <svg
+              class="intro__arrow"
+              width="58"
+              height="62"
+              viewBox="0 0 58 62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M58 27.8615L49.0769 27.8615L49.0769 20.5297L43.1282 20.5297L43.1282 13.1978L34.8 13.1978L34.8 7.33235L29.7436 7.33234M29.7436 7.33234L29.7436 0.000489581M29.7436 7.33234L24.65 7.33234L24.65 13.1978L17.8462 13.1978L17.8462 20.5297L8.92308 20.5297L8.92308 27.8615L-1.21785e-06 27.8615M29.7436 7.33234L29.7436 62.0005"
+                stroke="currentColor"
+                stroke-width="8"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="escape container" id="escape">
+        <div class="escape__inner">
+          <div class="escape__group">
+            <p class="section__badge">//escape to Moscow</p>
+            <h2 class="escape__heading">
+              <span>Away from home</span>
+              <span>Rushing to moscow</span>
+            </h2>
+            <h3 class="escape__subheading">
+              michael Lomonosov loved freedom and pursued his goals at all
+              costs.
+            </h3>
+            <p class="escape__text">
+              Being only 19 years old Lomonosov said no to a quiet life and an
+              arranged marriage. No plan, no money, just big dreams. He walked
+              hundreds of miles to Moscow, chasing knowledge, chasing freedom.
+              He didn’t just want to study science — he wanted to change the
+              game. The village couldn’t hold him. The big city was calling.
+            </p>
+          </div>
+          <div class="escape__img-wrapper">
+            <img
+              class="escape__img"
+              src="./assets/images/escape/lomonosov.png"
+              alt="Lomonosov"
+            />
+            <img
+              class="escape__web"
+              src="./assets/images/escape/web.svg"
+              alt="Web"
+            />
+          </div>
         </div>
       </section>
     </main>
