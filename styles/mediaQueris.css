@@ -1,6 +1,6 @@
 @media (max-width: 1279px) {
-  .hero-section {
-    background-size: cover;
+  .hero-section__inner {
+    background-size: 100vh auto;
   }
 }
 
@@ -8,6 +8,10 @@
   :root {
     --container-padding: 10px;
     --font-154: clamp(50px, 15.6vw, 100px);
+  }
+
+  .hero-section__inner {
+    background-size: 90vh auto;
   }
 
   .about__img {
