@@ -71,7 +71,7 @@ body {
 .hero-section__heading {
   font-family: var(--font-primary);
   font-weight: 700;
-  font-size: 14.259vmin;
+  font-size: var(--font-154);
   line-height: 100%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -79,7 +79,7 @@ body {
   position: absolute;
   bottom: 30.185vmin;
   left: 0;
-  line-height: 100%;
+  line-height: 80%;
   width: 100%;
 
   span {
@@ -90,7 +90,7 @@ body {
     }
 
     &:nth-child(3) {
-      margin-right: 18.5%;
+      margin-right: 8%;
       text-align: end;
     }
   }
@@ -98,7 +98,7 @@ body {
 
 .hero-section__navigation {
   position: absolute;
-  right: 0;
+  right: 5%;
   top: 45%;
   z-index: 2;
 }

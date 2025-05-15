@@ -1,4 +1,4 @@
-@media (max-width: 1151px) {
+@media (max-width: 1179px) {
   .header {
     display: block;
   }
@@ -7,8 +7,12 @@
     background-size: clamp(700px, 140%, 1530px) auto;
   }
 
-  .hero-section__heading span {
-    margin-left: 0 !important;
+  .hero-section__heading {
+    --font-154: 16vmin;
+
+    span {
+      margin-left: 0 !important;
+    }
   }
 
   .hero-section__inner {
@@ -20,8 +24,17 @@
 }
 
 @media (max-width: 768px) {
+  :root {
+    --container-padding: 10px;
+    --font-154: 15vmin;
+  }
+
   .introduce__img {
     margin-top: 10vmin;
+  }
+
+  .hero-section__heading {
+    line-height: 90%;
   }
 }
 
