@@ -117,7 +117,7 @@ body {
   translate: -50% 0;
 }
 
-.introduce {
+.about {
   margin-top: -3.704vmin;
   background: var(--c-primary);
   position: relative;
@@ -125,12 +125,12 @@ body {
   padding-top: 20vmin;
 }
 
-.introduce__img {
+.about__img {
   width: 100%;
   margin-top: -10vmin;
 }
 
-.introduce__heading {
+.about__heading {
   font-family: var(--font-primary);
   font-weight: 700;
   font-size: 7.778vmin;

@@ -103,7 +103,7 @@
           <nav class="hero-section__navigation">
             <ul class="hero-section__links">
               <li class="hero-section__link">
-                <a href="#introduce" class="link">Introduce</a>
+                <a href="#" class="link">about</a>
               </li>
               <li class="hero-section__link">
                 <a href="#" class="link">Escape to Moscow</a>
@@ -125,29 +125,28 @@
               </li>
             </ul>
           </nav>
-          <custom-button
-            class="hero-section__button"
-            label="more about lomonosov"
-          ></custom-button>
+          <a href="#about">
+            <custom-button
+              class="hero-section__button"
+              label="more about lomonosov"
+            ></custom-button>
+          </a>
         </div>
       </section>
-      <section class="introduce container" id="introduce">
-        <h2 class="introduce__heading">
+      <section class="about container" id="about">
+        <h2 class="about__heading">
           Russian scientist michael Vasilyevich Lomonosov was born On November
           19, 1711, in the village of Meschaninskaya.
         </h2>
-        <picture class="introduce__img-wrapper" alt="Lamonosov introduce">
+        <picture class="about__img-wrapper" alt="Lamonosov about">
           <source
-            srcset="./assets/images/introduce/short.png"
+            srcset="./assets/images/about/short.png"
             media="(max-width: 768px)"
             type="image/png"
           />
-          <source
-            srcset="./assets/images/introduce/full.png"
-            type="image/png"
-          />
+          <source srcset="./assets/images/about/full.png" type="image/png" />
           <img
-            class="introduce__img"
+            class="about__img"
             src="image-fallback.jpg"
             alt="Картинка для всех устройств"
           />
