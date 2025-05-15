@@ -19,6 +19,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .introduce__img {
+    margin-top: 10vmin;
+  }
+}
+
 @media (max-width: 440px) {
   .hero-section__button {
     width: 100%;

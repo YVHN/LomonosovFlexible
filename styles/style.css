@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow: hidden scroll;
   background-color: var(--c-additionaly);
 }
 
@@ -63,14 +68,6 @@ body {
   height: 100%;
 }
 
-.info {
-  margin-top: -3.704vmin;
-  height: 1000px;
-  background: var(--c-primary);
-  position: relative;
-  z-index: 2;
-}
-
 .hero-section__heading {
   font-family: var(--font-primary);
   font-weight: 700;
@@ -118,4 +115,27 @@ body {
   width: 53.426vmin;
   left: 50%;
   translate: -50% 0;
+}
+
+.introduce {
+  margin-top: -3.704vmin;
+  background: var(--c-primary);
+  position: relative;
+  z-index: 2;
+  padding-top: 20vmin;
+}
+
+.introduce__img {
+  width: 100%;
+  margin-top: -10vmin;
+}
+
+.introduce__heading {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 7.778vmin;
+  line-height: 95%;
+  text-transform: uppercase;
+  color: #0e0e0e;
+  text-align: justify;
 }
