@@ -23,7 +23,7 @@ class CustomButton extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .custom-button {
-            --shadow-size: clamp(5px, 0.463vmin, 40px);
+            --shadow-size: clamp(5px, 0.26vw, 40px);
 
             position: relative;
             height: clamp(60px, 3.125vw, 180px);

@@ -78,9 +78,9 @@ body {
   text-transform: uppercase;
   color: var(--c-primary);
   position: absolute;
-  bottom: clamp(200px, 17vw, 700px);
+  bottom: clamp(150px, 17vw, 700px);
   left: 0;
-  line-height: 80%;
+  line-height: 84%;
   width: 100%;
 
   span {
@@ -100,7 +100,7 @@ body {
 .hero-section__navigation {
   position: absolute;
   right: clamp(0px, 2vw, 100px);
-  bottom: clamp(300px, 27vw, 1200px);
+  bottom: clamp(240px, 27vw, 1200px);
   z-index: 2;
 }
 
@@ -112,7 +112,7 @@ body {
 
 .hero-section__button {
   position: absolute;
-  bottom: clamp(100px, 11vw, 300px);
+  bottom: clamp(70px, 11vw, 300px);
   width: clamp(420px, 45.069vw, 1600px);
   left: 50%;
   translate: -50% 0;
