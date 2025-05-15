@@ -7,10 +7,10 @@
   --font-additionally: "inter";
   --font-primary-o-1: "offbit101";
   --font-primary-o-2: "offbitdot";
-  --font-154: 10.6vw;
+  --font-154: clamp(77px, 10.6vw, 770px);
   --font-70: clamp(35px, 4.861vw, 400px);
   --font-80: clamp(40px, 5.556vw, 400px);
-  --font-18: clamp(18px, 1.25vw, 180px);
+  --font-18: clamp(12px, 1.25vw, 180px);
   --font-16: clamp(16px, 1.111vw, 160px);
   --font-14: 14px;
 

@@ -40,10 +40,10 @@ body {
 }
 
 .hero-section {
-  height: clamp(1100px, 63vw, 3000px);
+  height: clamp(700px, 63vw, 3000px);
   position: relative;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../assets/images/heroSection/lomonosov.png");
   background-repeat: no-repeat;
 
@@ -91,7 +91,7 @@ body {
     }
 
     &:nth-child(3) {
-      margin-right: 6vw;
+      margin-right: 9vw;
       text-align: end;
     }
   }
@@ -99,21 +99,21 @@ body {
 
 .hero-section__navigation {
   position: absolute;
-  right: 1vw;
-  bottom: 27vw;
+  right: clamp(0px, 2vw, 100px);
+  bottom: clamp(300px, 27vw, 1200px);
   z-index: 2;
 }
 
 .hero-section__links {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.108vw;
 }
 
 .hero-section__button {
   position: absolute;
-  bottom: clamp(100px, 13vw, 300px);
-  width: clamp(360px, 40.069vw, 1200px);
+  bottom: clamp(100px, 11vw, 300px);
+  width: clamp(420px, 45.069vw, 1600px);
   left: 50%;
   translate: -50% 0;
 }
@@ -191,5 +191,5 @@ body {
   font-weight: 400;
   font-family: var(--font-additionally);
   line-height: 100%;
-  width: 38vw;
+  width: 39vw;
 }
