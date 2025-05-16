@@ -44,18 +44,8 @@ body {
   position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
-    bottom: calc(clamp(100px, 8.333vw, 300px) / 3 * -1);
-    left: 0;
-    width: 100vw;
-    --height: clamp(100px, 8.333vw, 300px);
-    height: var(--height);
-    background: url("../assets/images/heroSection/pixelFooter.png");
-    z-index: 3;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../assets/images/heroSection/pixelFooter.png");
+    bottom: var(--centered-pixel-border);
   }
 }
 
@@ -371,4 +361,25 @@ body {
   left: 50%;
   translate: -50% -50%;
   pointer-events: none;
+}
+
+.university {
+  height: clamp(785px, 42.813vw, 1500px);
+  background: url("../assets/images/university/bg.png"), var(--c-additionally);
+  position: relative;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    background-image: url("../assets/images/university/pixelsTop.png");
+  }
+  &::after {
+    background-image: url("../assets/images/university/pixelsBottom.png");
+  }
+}
+
+.game {
+  background-color: var(--c-primary);
+  height: 1000px;
 }

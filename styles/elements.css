@@ -148,3 +148,33 @@
   top: 0;
   left: 0;
 }
+
+.section__pixel-border-top {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    top: calc(var(--height-pixel-border) * -1);
+    height: var(--height-pixel-border);
+    z-index: 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.section__pixel-border-bottom {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    bottom: calc(var(--height-pixel-border) * -1);
+    height: var(--height-pixel-border);
+    z-index: 3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
