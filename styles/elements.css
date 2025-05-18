@@ -149,6 +149,10 @@
   left: 0;
 }
 
+.section__badge--light {
+  color: var(--c-primary);
+}
+
 .section__pixel-border-top {
   &::before {
     content: "";

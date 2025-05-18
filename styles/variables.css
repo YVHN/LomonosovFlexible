@@ -11,6 +11,7 @@
   --font-70: clamp(30px, 4.861vw, 400px);
   --font-80: clamp(34px, 5.556vw, 400px);
   --font-54: clamp(28px, 2.813vw, 108px);
+  --font-40: clamp(40px, 2.778vw, 480px);
   --font-18: clamp(16px, 1.25vw, 180px);
   --font-16: clamp(12px, 0.9vw, 160px);
   --font-14: 14px;
