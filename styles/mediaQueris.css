@@ -52,6 +52,51 @@
   .intro__arrow {
     color: var(--c-primary);
   }
+
+  .game {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .game__content {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .game__window-slider {
+    width: 100%;
+    margin-top: clamp(15px, 2.083vw, 150px);
+  }
+
+  .game__window-images {
+    display: none;
+  }
+
+  .game__window {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .game__window-info {
+    width: 100%;
+  }
+
+  .game__window-body-inner {
+    flex-direction: column;
+  }
+
+  .game__paragraph {
+    margin-left: var(--heading-margin-lg);
+    width: clamp(218px, 19.444vw, 2180px);
+  }
+
+  .game__window-slider-arrows {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 440px) {

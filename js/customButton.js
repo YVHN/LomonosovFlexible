@@ -39,11 +39,15 @@ class CustomButton extends HTMLElement {
             border: none;
             width: 100%;
             cursor: pointer;
-            transition: box-shadow 0.15s ease, translate 0.15s ease;
+            transition: box-shadow 0.15s ease, translate 0.15s ease, opacity 0.15s ease;
 
             &:hover {
                 translate: var(--shadow-size) var(--shadow-size);
                 box-shadow: 0px 0px ${shadowColor};
+            }
+
+            &:active {
+              opacity: 0.2;
             }
         }
 

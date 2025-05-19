@@ -184,6 +184,7 @@ body {
 .intro__video {
   height: clamp(355px, 29.792vw, 100vw);
   position: relative;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -424,7 +425,7 @@ body {
 
 .game__content {
   position: relative;
-  --window-height: clamp(375px, 53.75vw, 3750px);
+  --window-height: clamp(550px, 53.75vw, 3750px);
   --window-margin: clamp(0px, 0.694vw, 100px);
   height: calc(var(--window-height) + (var(--window-margin) * 4));
 
@@ -511,6 +512,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: clamp(15px, 2.083vw, 150px);
+  margin-right: 4.427vw;
 
   .section__badge {
     position: unset;
@@ -531,4 +533,27 @@ body {
   color: var(--c-primary);
   font-family: var(--font-additionally);
   font-weight: 100;
+}
+
+.game__window-slider {
+  width: 39.8vw;
+}
+
+.game__window-slider-img {
+  width: 100%;
+  margin-bottom: clamp(15px, 1.042vw, 150px);
+}
+
+.game__window-slider-arrows {
+  display: flex;
+  gap: clamp(10px, 0.521vw, 100px);
+  margin-bottom: clamp(30px, 1.563vw, 300px);
+}
+
+.game__window-images {
+  margin-left: 1.042vw;
+}
+
+.game__window-images-item {
+  width: 19.635vw;
 }

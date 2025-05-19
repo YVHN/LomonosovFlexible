@@ -109,10 +109,10 @@
                 <a href="#escape" class="link">Escape to Moscow</a>
               </li>
               <li class="hero-section__link">
-                <a href="#" class="link">Game</a>
+                <a href="#game" class="link">Game</a>
               </li>
               <li class="hero-section__link">
-                <a href="#" class="link">Activity</a>
+                <a href="#activity" class="link">Activity</a>
               </li>
               <li class="hero-section__link">
                 <a href="#" class="link">Audiobook</a>
@@ -353,8 +353,25 @@
                     books!
                   </p>
                 </div>
-                <div class="game__window-slider"></div>
-                <div class="game__window-images"></div>
+                <div class="game__window-slider">
+                  <img
+                    src="assets/images/game/1.png"
+                    alt="Game screenshot"
+                    class="game__window-slider-img"
+                  />
+                  <div class="game__window-slider-arrows">
+                    <arrow-button icon="left"></arrow-button>
+                    <arrow-button icon="right"></arrow-button>
+                  </div>
+                  <custom-button label="Start playing"></custom-button>
+                </div>
+                <div class="game__window-images">
+                  <img
+                    class="game__window-images-item"
+                    src="assets/images/game/2.png"
+                    alt="Screenshot 1"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -362,6 +379,7 @@
       </section>
     </main>
     <script src="./js/customButton.js"></script>
+    <script src="./js/arrowButtton.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/index.js"></script>
   </body>
