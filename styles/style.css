@@ -421,6 +421,12 @@ body {
   background-color: var(--c-primary);
   padding-top: clamp(191px, 16.667vw, 1910px);
   padding-bottom: clamp(191px, 16.667vw, 1910px);
+  position: relative;
+
+  &::after {
+    background-image: url("../assets/images/game/pixels-bottom.png");
+    bottom: 0;
+  }
 }
 
 .game__content {
@@ -556,4 +562,106 @@ body {
 
 .game__window-images-item {
   width: 19.635vw;
+}
+
+.activity {
+  background-color: var(--c-additionally);
+  padding-top: clamp(50px, 8.611vw, 500px);
+  padding-bottom: clamp(80px, 10.278vw, 500px);
+  background-image: url("../assets/images/activity/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.activity__inner {
+  position: relative;
+}
+
+.activity__heading {
+  width: 100%;
+  font-size: var(--font-80);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: clamp(20px, 2.083vw, 200px);
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      margin-left: var(--heading-margin-md);
+    }
+
+    &:nth-child(2) {
+      margin-left: var(--heading-margin-lg);
+    }
+  }
+}
+
+.activity__paragraph {
+  font-size: var(--font-18);
+  color: var(--c-primary);
+  font-family: var(--font-additionally);
+  font-weight: 100;
+  width: clamp(217px, 27.986vw, 2170px);
+  margin-left: var(--heading-margin-lg);
+}
+
+.activity__library-img {
+  margin: 0 auto;
+  display: block;
+  margin-top: clamp(20px, 1.389vw, 200px);
+  width: clamp(500px, 39.722vw, 5000px);
+}
+
+.info-tape {
+  background-color: var(--c-accent);
+  padding: clamp(15px, 2.083vw, 150px) 0;
+  overflow: hidden;
+}
+
+.info-tape__item {
+  white-space: nowrap;
+  color: var(--c-primary);
+  font-size: var(--font-28);
+  font-family: var(--font-primary);
+  font-weight: 700;
+
+  &:nth-child(odd) {
+    animation: scroll-left 140s infinite;
+  }
+
+  &:nth-child(even) {
+    animation: scroll-right 120s infinite;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: clamp(5px, 0.694vw, 50px);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

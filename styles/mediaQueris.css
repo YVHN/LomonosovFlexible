@@ -45,7 +45,8 @@
 
   .intro__inner,
   .escape__inner,
-  .university__inner {
+  .university__inner,
+  .acitivity__inner {
     padding-top: 24px;
   }
 
@@ -63,11 +64,17 @@
     &::before {
       display: none;
     }
+
+    --window-margin: 0;
   }
 
   .game__window-slider {
     width: 100%;
     margin-top: clamp(15px, 2.083vw, 150px);
+  }
+
+  .game__window {
+    position: relative;
   }
 
   .game__window-images {
@@ -96,6 +103,10 @@
 
   .game__window-slider-arrows {
     justify-content: center;
+  }
+
+  .activity__library-img {
+    width: 100%;
   }
 }
 
