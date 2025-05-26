@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="./styles/elements.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/mediaQueris.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.svg"
+      type="image/x-icon"
+    />
     <title>A. Lomonosov</title>
   </head>
   <body>
@@ -93,7 +98,10 @@
       </div>
     </header>
     <main>
-      <section class="hero-section container section__pixel-border-bottom">
+      <section
+        class="hero-section container section__pixel-border-bottom"
+        id="hero"
+      >
         <div class="hero-section__inner">
           <p class="hero-section__heading">
             <span>Michael</span>
@@ -377,7 +385,7 @@
           </div>
         </div>
       </section>
-      <section class="activity container">
+      <section class="activity container" id="activity">
         <div class="activity__inner">
           <p class="section__badge section__badge--light">//activity</p>
           <h2 class="activity__heading">
@@ -430,7 +438,141 @@
           / poet / patriot / Astronomical researcher
         </p>
       </section>
+      <section class="form container">
+        <div class="form__inner">
+          <p class="section__badge">//form</p>
+          <h2 class="form__heading">
+            <span>What kind of person</span>
+            <span>you want to read about</span>
+            <span>next time?</span>
+          </h2>
+          <custom-button label="Send"></custom-button>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <a href="#hero" class="footer__to-top container to-top">
+        <svg
+          class="to-top__arrow"
+          width="58"
+          height="62"
+          viewBox="0 0 58 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M58 27.8615L49.0769 27.8615L49.0769 20.5297L43.1282 20.5297L43.1282 13.1978L34.8 13.1978L34.8 7.33235L29.7436 7.33234M29.7436 7.33234L29.7436 0.000489581M29.7436 7.33234L24.65 7.33234L24.65 13.1978L17.8462 13.1978L17.8462 20.5297L8.92308 20.5297L8.92308 27.8615L-1.21785e-06 27.8615M29.7436 7.33234L29.7436 62.0005"
+            stroke="currentColor"
+            stroke-width="8"
+          />
+        </svg>
+        <p>Back to top</p>
+        <svg
+          class="to-top__arrow"
+          width="58"
+          height="62"
+          viewBox="0 0 58 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M58 27.8615L49.0769 27.8615L49.0769 20.5297L43.1282 20.5297L43.1282 13.1978L34.8 13.1978L34.8 7.33235L29.7436 7.33234M29.7436 7.33234L29.7436 0.000489581M29.7436 7.33234L24.65 7.33234L24.65 13.1978L17.8462 13.1978L17.8462 20.5297L8.92308 20.5297L8.92308 27.8615L-1.21785e-06 27.8615M29.7436 7.33234L29.7436 62.0005"
+            stroke="currentColor"
+            stroke-width="8"
+          />
+        </svg>
+      </a>
+      <div class="footer__body container">
+        <div class="footer__info">
+          <img
+            class="footer__info-portrait"
+            src="assets/images/footer/portrait.png"
+            alt="Portrait"
+          />
+          <img
+            class="footer__info-signature"
+            src="assets/images/footer/signature.png"
+            alt="Signature"
+          />
+        </div>
+        <div class="footer__navigation">
+          <ul class="footer__links">
+            <li class="footer__link link">
+              <a href="#introduce">Introduce</a>
+            </li>
+            <li class="footer__link link">
+              <a href="#escape">Escape to Moscow</a>
+            </li>
+            <li class="footer__link link"><a href="#university">MSU</a></li>
+            <li class="footer__link link"><a href="#game">Game</a></li>
+            <li class="footer__link link">
+              <a href="#activity">Activity</a>
+            </li>
+            <li class="footer__link link">
+              <a href="#discovery">Discovery</a>
+            </li>
+          </ul>
+          <ul class="footer__links">
+            <li class="footer__link link">
+              <a href="#audiobook">Audiobook</a>
+            </li>
+            <li class="footer__link link">
+              <a href="#edit">Edit</a>
+            </li>
+            <li class="footer__link link">
+              <a href="#privatelife">Private life</a>
+            </li>
+            <li class="footer__link link"><a href="#death">Death</a></li>
+            <li class="footer__link link"><a href="#form">Form</a></li>
+            <li class="footer__link link">
+              <a href="#patriotism">Patriotism</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__contact-heading">Contact us</h3>
+          <div class="footer__contact-group">
+            <a
+              href="mailto:timour.agaev564@bk.ru"
+              class="footer__contact-link link"
+            >
+              timour.agaev564@bk.ru
+            </a>
+            <a href="tel:+7(444)444-44-44" class="footer__contact-link link">
+              +7 (444) 444-44-44
+            </a>
+          </div>
+          <div class="footer__socials">
+            <a href="#">
+              <img src="assets/icons/socials/behance.svg" alt="Behance" />
+            </a>
+            <a href="#"><img src="assets/icons/socials/vk.svg" alt="Vk" /></a>
+            <a href="#">
+              <img src="assets/icons/socials/whatsapp.svg" alt="Wshatsapp" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/socials/telegram.svg" alt="Telegram" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/socials/instagram.svg" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyrights container">
+        <p>ALL RIGHTS RESERVED. 2025</p>
+        <p>TIMOUR AGAEV</p>
+        <p>YVHN</p>
+        <p>Contest work</p>
+        <p>2025</p>
+      </div>
+    </footer>
+    <div class="afterword container">
+      <p>
+        This is a non-commercial concept project for demonstration purposes
+        only. No data is collected or used.
+      </p>
+    </div>
     <script src="./js/customButton.js"></script>
     <script src="./js/arrowButtton.js"></script>
     <script src="./js/menu.js"></script>

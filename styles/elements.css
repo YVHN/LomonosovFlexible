@@ -182,3 +182,27 @@
     background-repeat: no-repeat;
   }
 }
+
+.to-top {
+  background-color: var(--c-accent);
+  transition: background-color 0.15s ease;
+  color: var(--c-primary);
+  font-size: var(--font-18);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-primary);
+
+  &:hover {
+    background-color: var(--c-primary);
+    color: var(--c-accent);
+  }
+}
+
+.to-top__arrow {
+  width: max(20px, 1.389vw);
+}

@@ -58,12 +58,10 @@ button::-moz-focus-inner {
 }
 
 a,
+a:hover,
 a:visited {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
+  color: inherit;
 }
 
 ul li {

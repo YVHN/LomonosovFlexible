@@ -108,6 +108,24 @@
   .activity__library-img {
     width: 100%;
   }
+
+  .footer__body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__copyrights {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    p {
+      flex-shrink: 0;
+    }
+  }
+
+  .afterword p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 440px) {
@@ -131,5 +149,17 @@
     width: 300vw;
     top: 55%;
     left: 85%;
+  }
+
+  .footer__body {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__info {
+    flex-direction: row;
+  }
+
+  .footer__navigation {
+    display: none;
   }
 }

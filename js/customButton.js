@@ -33,7 +33,7 @@ class CustomButton extends HTMLElement {
             color: var(--c-primary);
             background-color: var(--c-accent);
             box-shadow: var(--shadow-size) var(--shadow-size) ${shadowColor};
-            font-size: 18px;
+            font-size: var(--font-18);
             text-transform: uppercase;
             font-family: var(--font-primary-o-1);
             border: none;
