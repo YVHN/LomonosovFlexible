@@ -20,6 +20,8 @@ class CustomButton extends HTMLElement {
     const label = this.getAttribute("label") || "Кнопка";
     const shadowColor = this.getAttribute("shadowColor") || "var(--c-primary)";
 
+    console.log(shadowColor);
+
     this.shadowRoot.innerHTML = `
       <style>
         .custom-button {

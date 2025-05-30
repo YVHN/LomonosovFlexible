@@ -46,7 +46,8 @@
   .intro__inner,
   .escape__inner,
   .university__inner,
-  .acitivity__inner {
+  .acitivity__inner,
+  .form__inner {
     padding-top: 24px;
   }
 
@@ -124,6 +125,14 @@
   }
 
   .afterword p {
+    width: 100%;
+  }
+
+  .form__arrow {
+    display: none;
+  }
+
+  .form__body {
     width: 100%;
   }
 }

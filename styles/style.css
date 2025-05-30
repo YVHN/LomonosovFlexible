@@ -807,6 +807,8 @@ body {
 
 .form__heading {
   width: 100%;
+  margin-bottom: max(20px, 3.472vw);
+
   span {
     display: block;
     font-size: var(--font-70);
@@ -824,4 +826,30 @@ body {
       margin-left: var(--heading-margin-lg);
     }
   }
+}
+
+.form__arrow {
+  position: absolute;
+  width: 12.222vw;
+  height: 8.056vw;
+  top: 13.333vw;
+  pointer-events: none;
+}
+
+.form__arrow--left {
+  left: 0;
+}
+
+.form__arrow--right {
+  rotate: 180deg;
+  right: 0;
+}
+
+.form__body {
+  width: max(700px, 39.722vw);
+  margin: 0 auto;
+}
+
+.form__input {
+  margin-bottom: max(20px, 2.083vw);
 }

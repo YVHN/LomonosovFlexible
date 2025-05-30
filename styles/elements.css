@@ -206,3 +206,20 @@
 .to-top__arrow {
   width: max(20px, 1.389vw);
 }
+
+.input {
+  .input__body {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: max(10px, 0.694vw);
+    font-family: var(--font-primary-o-1);
+    font-size: var(--font-18);
+  }
+
+  .input__underline {
+    height: 1px;
+    opacity: 0.5;
+    background-color: var(--c-additionally);
+  }
+}
