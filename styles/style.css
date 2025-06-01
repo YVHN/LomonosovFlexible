@@ -619,6 +619,244 @@ body {
   width: clamp(500px, 39.722vw, 5000px);
 }
 
+.discovery {
+  background-color: var(--c-additionally);
+  padding-top: max(8.333vw, 80px);
+  padding-bottom: max(8.333vw, 80px);
+}
+
+.discovery__inner {
+  position: relative;
+}
+
+.discovery__heading {
+  width: 100%;
+  font-size: var(--font-80);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: max(40px, 2.778vw);
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      margin-left: var(--heading-margin-md);
+    }
+
+    &:nth-child(2) {
+      margin-left: var(--heading-margin-lg);
+    }
+  }
+}
+
+.discovery__paragraph {
+  font-size: var(--font-18);
+  color: var(--c-primary);
+  font-family: var(--font-additionally);
+  font-weight: 100;
+  width: clamp(217px, 27.986vw, 2170px);
+  margin-left: var(--heading-margin-lg);
+  margin-bottom: max(15px, 2.083vw);
+}
+
+.discovery__subheading {
+  width: 100%;
+  font-size: var(--font-24);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-top: max(10px, 2.778vw);
+  margin-left: var(--heading-margin-lg);
+  width: 39.722vw;
+}
+
+.discovery__group {
+  position: relative;
+  width: 100%;
+}
+
+.discovery__invention {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    width: max(170px, 12.5vw);
+    aspect-ratio: 1/1;
+    margin-bottom: max(5px, 1.042vw);
+  }
+
+  p {
+    font-size: var(--font-24);
+    font-weight: 700;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+  }
+}
+
+.discovery__invention--lg {
+  left: unset;
+  right: 0;
+
+  img {
+    width: max(170px, 16.667vw);
+  }
+}
+
+.patriotism {
+  padding-bottom: max(20px, 9.028vw);
+  position: relative;
+
+  &::after {
+    background-image: url("../assets/images/patriotism/border-pixel.png");
+  }
+}
+
+.patriotism__inner {
+  position: relative;
+}
+
+.patriotism__heading {
+  width: 100%;
+  font-size: var(--font-80);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: max(40px, 2.778vw);
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      margin-left: var(--heading-margin-md);
+    }
+
+    &:nth-child(2) {
+      margin-left: var(--heading-margin-lg);
+    }
+  }
+}
+
+.patriotism__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    position: relative;
+    &::before {
+      top: -3vw;
+      right: -9vw;
+      content: "";
+      position: absolute;
+      background-image: url("../assets/images/patriotism/particles-1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 10vw;
+      height: 6.389vw;
+    }
+    &::after {
+      bottom: -3.7vw;
+      right: -9.7vw;
+      content: "";
+      position: absolute;
+      background-image: url("../assets/images/patriotism/particles-2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 10.764vw;
+      height: 4.722vw;
+    }
+  }
+}
+
+.patriotism__img-particles {
+  width: 150px;
+  position: absolute;
+  left: -99%;
+}
+
+.patriotism__img {
+  width: 39.722vw;
+  margin: max(20px, 1.389vw) auto 0;
+  display: inline-block;
+}
+
+.audio-books__heading {
+  width: 100%;
+  font-size: var(--font-80);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-additionally);
+  margin-bottom: max(18px, 2.083vw);
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      margin-left: var(--heading-margin-md);
+    }
+
+    &:nth-child(2) {
+      margin-left: var(--heading-margin-lg);
+    }
+  }
+}
+
+.audio-books__inner {
+  position: relative;
+}
+
+.audio-books__paragraph {
+  font-size: var(--font-18);
+  color: var(--c-additionally);
+  font-family: var(--font-additionally);
+  font-weight: 100;
+  width: max(217px, 34.986vw);
+  margin-left: var(--heading-margin-lg);
+  margin-bottom: max(20px, 2.778vw);
+  text-align: center;
+}
+
+.audio-books {
+  padding-top: max(160px, 13.889vw);
+  background-color: var(--c-primary);
+}
+
+.audio-books__play-button {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  background-color: transparent;
+
+  svg {
+    width: 4.167vw;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: fill 0.15s ease, opacity 0.15s ease;
+  }
+
+  &:hover {
+    svg {
+      fill: var(--c-accent);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: var(--c-additionally);
+    }
+  }
+}
+
 .info-tape {
   background-color: var(--c-accent);
   padding: clamp(15px, 2.083vw, 150px) 0;
@@ -846,7 +1084,7 @@ body {
 }
 
 .form__body {
-  width: max(700px, 39.722vw);
+  width: max(400px, 39.722vw);
   margin: 0 auto;
 }
 

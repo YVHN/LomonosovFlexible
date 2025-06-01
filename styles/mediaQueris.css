@@ -47,6 +47,8 @@
   .escape__inner,
   .university__inner,
   .acitivity__inner,
+  .discovery__inner,
+  .patriotism__inner,
   .form__inner {
     padding-top: 24px;
   }
@@ -110,6 +112,16 @@
     width: 100%;
   }
 
+  .patriotism__img {
+    width: 60vw;
+  }
+
+  .discovery__invention {
+    position: relative;
+    width: fit-content;
+    margin: max(20px, 1.389vw) auto 0;
+  }
+
   .footer__body {
     grid-template-columns: 1fr 1fr;
   }
@@ -128,17 +140,34 @@
     width: 100%;
   }
 
-  .form__arrow {
-    display: none;
-  }
-
-  .form__body {
-    width: 100%;
+  .discovery__subheading {
+    width: 60.722vw;
   }
 }
 
 @media (max-width: 440px) {
   .hero-section__button {
+    width: 100%;
+  }
+
+  .patriotism__img-wrapper {
+    div {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .university__paragraph,
+  .activity__paragraph,
+  .game__paragraph,
+  .patriotism__paragraph,
+  .discovery__paragraph {
+    width: fit-content;
+  }
+
+  .patriotism__img {
     width: 100%;
   }
 
@@ -148,6 +177,14 @@
 
   .hero-section {
     padding-top: 120px;
+  }
+
+  .form__arrow {
+    display: none;
+  }
+
+  .form__body {
+    width: 100%;
   }
 
   .hero-section__inner {
