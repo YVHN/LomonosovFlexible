@@ -8,6 +8,29 @@
     --heading-margin-md: 0px;
   }
 
+  .music-video__interactive {
+    position: unset;
+    top: unset;
+    left: unset;
+    translate: unset;
+
+    custom-button {
+      display: none;
+    }
+  }
+
+  .music-video__play-button {
+    display: inline-block;
+
+    svg {
+      opacity: 1;
+    }
+  }
+
+  .music-video__paragraph {
+    color: var(--c-additionally);
+  }
+
   .audio-books__track {
     top: 30% !important;
   }
@@ -54,6 +77,7 @@
   .discovery__inner,
   .patriotism__inner,
   .audiobooks__inner,
+  .music-video__inner,
   .form__inner {
     padding-top: 24px;
   }
