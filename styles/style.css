@@ -1046,7 +1046,7 @@ body {
   width: max(218px, 25.972vw);
 
   p {
-    font-family: var(--font-primary);
+    font-family: var(--font-additionally);
     font-weight: 400;
     font-size: var(--font-18);
     line-height: 100%;
