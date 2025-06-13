@@ -1,0 +1,18 @@
+@media (hover: hover) {
+  .link:hover {
+    opacity: 1;
+  }
+
+  .to-top:hover {
+    background-color: var(--c-primary);
+    color: var(--c-accent);
+  }
+
+  .play-button:hover {
+    svg {
+      fill: var(--c-accent);
+      opacity: 1;
+      filter: drop-shadow(4px 4px 0 black);
+    }
+  }
+}

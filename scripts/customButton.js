@@ -43,11 +43,6 @@ class CustomButton extends HTMLElement {
             cursor: pointer;
             transition: box-shadow 0.15s ease, translate 0.15s ease, opacity 0.15s ease;
 
-            &:hover {
-                translate: var(--shadow-size) var(--shadow-size);
-                box-shadow: 0px 0px ${shadowColor};
-            }
-
             &:active {
               opacity: 0.2;
             }
@@ -56,6 +51,14 @@ class CustomButton extends HTMLElement {
         @media (max-width: 440px) {
           .custom-button {
             box-shadow: unset;
+          }
+        }
+
+        @media (hover: hover) {
+          .custom-button:hover {
+              translate: var(--shadow-size) var(--shadow-size);
+              box-shadow: 0px 0px ${shadowColor};
+            }
           }
         }
       </style>

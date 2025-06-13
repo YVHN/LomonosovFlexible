@@ -8,10 +8,6 @@
   text-transform: uppercase;
   transition: opacity 0.15s ease;
 
-  &:hover {
-    opacity: 1;
-  }
-
   &:active {
     opacity: 0.2;
   }
@@ -196,11 +192,6 @@
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-primary);
-
-  &:hover {
-    background-color: var(--c-primary);
-    color: var(--c-accent);
-  }
 }
 
 .to-top__arrow {
@@ -224,8 +215,7 @@
   }
 }
 
-
-.play-button{
+.play-button {
   width: fit-content;
   height: fit-content;
   padding: 0;
@@ -237,14 +227,6 @@
     cursor: pointer;
     opacity: 0.2;
     transition: fill 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
-  }
-
-  &:hover {
-    svg {
-      fill: var(--c-accent);
-      opacity: 1;
-      filter: drop-shadow(4px 4px 0 black);
-    }
   }
 
   &:active {

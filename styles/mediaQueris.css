@@ -78,6 +78,10 @@
   .patriotism__inner,
   .audiobooks__inner,
   .music-video__inner,
+  .personal-life__inner,
+  .death__inner,
+  .activity__inner,
+  .audio-books__inner,
   .form__inner {
     padding-top: 24px;
   }
@@ -149,6 +153,30 @@
     position: relative;
     width: fit-content;
     margin: max(20px, 1.389vw) auto 0;
+  }
+
+  .personal-life__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.8vw;
+  }
+
+  .personal-life__photocard {
+    &:first-child {
+      position: relative;
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      margin: 0;
+      order: 3;
+    }
+  }
+
+  .personal-life__text {
+    position: relative;
+    order: 2;
   }
 
   .footer__body {

@@ -890,6 +890,7 @@ body {
 
 .music-video {
   background-color: var(--c-primary);
+  padding-bottom: max(160px, 16.667vw);
 }
 
 .music-video__inner {
@@ -936,6 +937,185 @@ body {
   left: 50%;
   translate: -50% -50%;
   z-index: 3;
+}
+
+.personal-life {
+  padding-top: max(50px, 6.944vw);
+  padding-bottom: max(80px, 8.333vw);
+  position: relative;
+
+  &::before {
+    background-image: url("../assets/images/personal_life/pixels-top.png");
+  }
+}
+
+.personal-life__inner {
+  position: relative;
+}
+
+.personal-life__heading {
+  width: 100%;
+  font-size: var(--font-80);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: max(18px, 2.083vw);
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      margin-left: var(--heading-margin-md);
+    }
+
+    &:nth-child(2) {
+      margin-left: var(--heading-margin-lg);
+    }
+  }
+}
+
+.personal-life__content {
+  position: relative;
+  width: 100%;
+}
+
+.personal-life__photocard {
+  width: fit-content;
+
+  &:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:nth-child(2) {
+    margin-left: var(--heading-margin-lg);
+  }
+}
+
+.personal-life__photocard-img {
+  margin-bottom: max(24px, 0.694vw);
+}
+
+.personal-life__photocard-name {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: var(--font-16);
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: max(10px, 0.347vw);
+}
+
+.personal-life__photocard-timeline {
+  display: flex;
+  align-items: center;
+  gap: max(5px, 1.042vw);
+
+  p {
+    color: var(--c-accent);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: var(--font-24);
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: justify;
+    color: #d8cfa9;
+  }
+
+  div {
+    width: 100%;
+    height: 1px;
+    background-color: var(--c-primary);
+  }
+}
+
+.personal-life__photocard-img {
+  width: max(175px, 15.903vw);
+}
+
+.personal-life__text {
+  display: flex;
+  flex-direction: column;
+  gap: max(15px, 2.083vw);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: max(218px, 25.972vw);
+
+  p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: var(--font-18);
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #d8cfa9;
+  }
+}
+
+.personal-life__photocard--large {
+  .personal-life__photocard-img {
+    width: max(175px, 26.042vw);
+  }
+}
+
+.death {
+  padding-bottom: max(30px, 8.333vw);
+  position: relative;
+
+  &::after {
+    background-image: url("../assets/images/death/pixel-border.png");
+  }
+}
+
+.death__inner {
+  position: relative;
+}
+
+.death__heading {
+  width: 100%;
+  font-size: var(--font-80);
+  font-weight: 700;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: max(18px, 2.083vw);
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      margin-left: var(--heading-margin-md);
+    }
+
+    &:nth-child(2) {
+      margin-left: var(--heading-margin-lg);
+    }
+  }
+}
+
+.death__paragraph {
+  line-height: 110%;
+  text-transform: uppercase;
+  font-family: var(--font-additionally);
+  font-size: var(--font-18);
+  margin-bottom: max(20px, 3vw);
+  font-weight: 400;
+}
+
+.death__paragraph--second {
+  font-family: var(--font-primary);
+  font-size: var(--font-24);
+  font-weight: 700;
+}
+
+.death__img {
+  height: max(190px, 28.611vw);
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: max(20px, 3vw);
 }
 
 .info-tape {
@@ -1116,7 +1296,7 @@ body {
 .form {
   background-color: var(--c-primary);
   color: var(--c-additionally);
-  padding-top: max(60px, 8.333vw);
+  padding-top: max(120px, 16.666vw);
   padding-bottom: max(60px, 6.944vw);
 }
 
