@@ -797,10 +797,10 @@ body {
     position: absolute;
     top: 28.583vw;
     width: 28.819vw;
-    height: 61.042vw;
-    background-image: url("../assets/images/audiobooks/book.png");
-    background-position: center;
-    background-size: cover;
+    height: 54.042vw;
+    background-image: url(../assets/images/audiobooks/book.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &::after {
