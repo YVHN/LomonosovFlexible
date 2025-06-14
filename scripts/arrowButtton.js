@@ -34,14 +34,17 @@ class ArrowButton extends HTMLElement {
             border: 2px solid var(--c-accent);
             transition: background-color 0.15s ease, opacity 0.15s ease, border-color 0.15s ease;
 
-            &:hover {
-              background-color: var(--c-primary);
-              color: var(--c-accent)
-            }
-
             &:active {
               opacity: 0.2;
             }
+        }
+
+        @media (hover: hover) {
+          .custom-button:hover {
+              background-color: var(--c-primary);
+              color: var(--c-accent);
+            }
+          }
         }
       </style>
       <button class="arrow-button" type="button">$icon</button>

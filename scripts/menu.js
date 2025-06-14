@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   links.forEach((link) => {
     link.addEventListener("click", () => {
-      document.body.classList.toggle("no-scroll");
-      menu.classList.toggle("menu--active");
+      document.body.classList.remove("no-scroll");
+      menuEl.classList.remove("menu--active");
     });
   });
 });
