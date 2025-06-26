@@ -8,9 +8,9 @@
   --font-primary-o-1: "offbit101";
   --font-primary-o-2: "offbitdot";
   --font-154: clamp(77px, 10.6vw, 770px);
-  --font-80: clamp(34px, 5.556vw, 400px);
+  --font-82: clamp(34px, 5.4815vw, 400px);
   --font-70: clamp(30px, 4.861vw, 400px);
-  --font-54: clamp(28px, 2.813vw, 108px);
+  --font-54: clamp(28px, 3.755vw, 108px);
   --font-40: clamp(40px, 2.778vw, 480px);
   --font-28: clamp(24px, 1.944vw, 280px);
   --font-28: clamp(24px, 1.944vw, 280px);
@@ -22,7 +22,7 @@
 
   --container-padding: clamp(10px, 2.083vw, 120px);
   --heading-margin-md: 12vw;
-  --heading-margin-lg: 28vw;
+  --heading-margin-lg: 28.7vw;
 
   --height-pixel-border: clamp(100px, 8.333vw, 300px);
   --centered-pixel-border: calc(clamp(100px, 8.333vw, 300px) / 3 * -1);

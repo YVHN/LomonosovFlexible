@@ -8,6 +8,43 @@
     --heading-margin-md: 0px;
   }
 
+  .death__paragraph--second {
+    width: 100%;
+    text-align: justify;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .patriotism__paragraph {
+    width: clamp(300px, 27.986vw, 2170px);
+    margin-left: calc(var(--heading-margin-lg) - 10.2vw);
+
+    span {
+      &:nth-child(13) {
+        width: 38.2vw;
+      }
+    }
+  }
+
+  .personal-life__paragraph {
+    &:first-child {
+      span {
+        display: inline !important;
+        margin: 0 !important;
+        width: 100% !important;
+        text-wrap: unset !important;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 1.389vw;
+    }
+  }
+
+  .escape__subheading {
+    width: 80vw;
+  }
+
   .music-video__interactive {
     position: unset;
     top: unset;
@@ -162,6 +199,10 @@
     gap: 2.8vw;
   }
 
+  .intro__text {
+    text-align: unset;
+  }
+
   .personal-life__photocard {
     &:first-child {
       position: relative;
@@ -203,6 +244,21 @@
 }
 
 @media (max-width: 440px) {
+  .escape__subheading {
+    width: 100%;
+  }
+
+  .patriotism__paragraph,
+  .activity__paragraph {
+    margin-left: var(--heading-margin-lg);
+    span {
+      display: inline !important;
+      margin: 0 !important;
+      width: 100% !important;
+      text-wrap: unset !important;
+    }
+  }
+
   .hero-section__button {
     width: 100%;
   }
@@ -217,7 +273,7 @@
   }
 
   .university__paragraph,
-  .activity__paragraph,
+  .patriotism__paragraph,
   .game__paragraph,
   .patriotism__paragraph,
   .discovery__paragraph {
