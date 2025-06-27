@@ -54,10 +54,10 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-position: center top;
+  background-position: center;
   background-image: url("../assets/images/heroSection/lomonosov.png");
   background-repeat: no-repeat;
-  background-size: clamp(1000px, 90vw, 3000px);
+  background-size: clamp(1000px, 96vw, 3000px);
 }
 
 .hero-section__heading {
