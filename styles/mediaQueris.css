@@ -87,10 +87,6 @@
     color: var(--c-additionally);
   }
 
-  .audio-books__track {
-    top: 30% !important;
-  }
-
   .about__img {
     margin-top: 10vmin;
   }
@@ -159,6 +155,7 @@
 
     --window-margin: 0;
   }
+  
 
   .game__window-slider {
     width: 100%;

@@ -77,12 +77,17 @@ body {
   span {
     display: block;
 
+    span {
+      display: inline;
+      margin: 0;
+    }
+
     &:nth-child(1) {
       margin-left: 13.5vw;
     }
 
     &:nth-child(3) {
-      margin-right: 11.5vw;
+      margin-right: 8.8vw;
       text-align: end;
     }
   }
@@ -90,7 +95,7 @@ body {
 
 .hero-section__navigation {
   position: absolute;
-  right: clamp(0px, 5.5vw, 300px);
+  right: 2vw;
   bottom: clamp(230px, 27vw, 1200px);
   z-index: 2;
 }
@@ -104,7 +109,7 @@ body {
 .hero-section__button {
   position: absolute;
   bottom: clamp(70px, 11vw, 300px);
-  width: clamp(420px, 45.069vw, 100%);
+  width: clamp(210px, 39vw, 3200px);
   left: 50%;
   translate: -50% 0;
 }
@@ -428,6 +433,10 @@ body {
   padding-top: clamp(191px, 16.667vw, 1910px);
   padding-bottom: clamp(191px, 16.667vw, 1910px);
   position: relative;
+  --window-height: clamp(550px, 53.75vw, 3750px);
+  --window-margin: clamp(0px, 0.694vw, 100px);
+  padding-right: calc(var(--window-margin) * 2);
+  padding-left: calc(var(--window-margin) * 2);
 
   &::after {
     background-image: url("../assets/images/game/pixels-bottom.png");
@@ -437,8 +446,6 @@ body {
 
 .game__content {
   position: relative;
-  --window-height: clamp(550px, 53.75vw, 3750px);
-  --window-margin: clamp(0px, 0.694vw, 100px);
   height: calc(var(--window-height) + (var(--window-margin) * 4));
 
   &::before,
@@ -1010,13 +1017,14 @@ body {
   }
 
   .audio-books__track {
-    top: 60%;
+    top: 50%;
+    translate: 0 -50%;
     position: absolute;
     height: max(102px, 9.306vw);
   }
 
   .audio-books__track--right {
-    right: min(-310px, -28.722vw);
+    right: min(-310px, -29.722vw);
   }
   .audio-books__track--left {
     left: min(-320px, -29.722vw);
