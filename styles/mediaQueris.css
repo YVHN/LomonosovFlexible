@@ -8,6 +8,25 @@
     --heading-margin-md: 0px;
   }
 
+  .death__paragraph--big {
+    margin-left: 0;
+    display: block;
+
+    p {
+      span {
+        display: inline !important;
+      }
+    }
+
+    p:last-child {
+      margin-left: 0 !important;
+
+      span {
+        margin: 0 !important;
+      }
+    }
+  }
+
   .death__paragraph--second {
     width: 100%;
     text-align: justify;

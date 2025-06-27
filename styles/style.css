@@ -46,7 +46,7 @@ body {
 
   &::after {
     background-image: url("../assets/images/heroSection/pixelFooter.png");
-    bottom: var(--centered-pixel-border);
+    bottom: calc(var(--centered-pixel-border) - 1px);
   }
 }
 
@@ -1233,11 +1233,41 @@ body {
 
 .death__paragraph {
   line-height: 110%;
-  text-transform: uppercase;
   font-family: var(--font-additionally);
   font-size: var(--font-18);
   margin-bottom: max(20px, 3vw);
   font-weight: 400;
+}
+
+.death__paragraph--big {
+  display: flex;
+  --line-margin: 1.736vw;
+  margin-left: var(--heading-margin-lg);
+
+  p {
+    span {
+      display: block;
+    }
+  }
+
+  p:last-child {
+    margin-left: -2.62vw !important;
+
+    span {
+      &:nth-child(2) {
+        margin-left: var(--line-margin);
+      }
+      &:nth-child(3) {
+        margin-left: calc(var(--line-margin) * 2);
+      }
+      &:nth-child(4) {
+        margin-left: calc(var(--line-margin) * 2 - 0.3vw);
+      }
+      &:nth-child(5) {
+        margin-left: calc(var(--line-margin));
+      }
+    }
+  }
 }
 
 .death__paragraph--second {
