@@ -41,7 +41,7 @@ body {
 }
 
 .hero-section {
-  height: clamp(700px, 63vw, 3000px);
+  height: clamp(700px, 56vw, 3000px);
   position: relative;
 
   &::after {
