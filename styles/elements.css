@@ -155,7 +155,7 @@
     position: absolute;
     left: 0;
     width: 100vw;
-    top: calc(var(--height-pixel-border) * -1);
+    top: calc((var(--height-pixel-border) - 2px) * -1);
     height: var(--height-pixel-border);
     z-index: 3;
     background-position: center;
@@ -170,7 +170,7 @@
     position: absolute;
     left: 0;
     width: 100vw;
-    bottom: calc(var(--height-pixel-border) - 1px; * -1);
+    bottom: calc((var(--height-pixel-border) - 2px) * -1);
     height: var(--height-pixel-border);
     z-index: 3;
     background-position: center;

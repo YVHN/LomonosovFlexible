@@ -677,6 +677,7 @@ body {
   font-weight: 100;
   margin-left: calc(var(--heading-margin-lg) - 0.7vw);
   --line-margin: 1.736vw;
+  margin-bottom: clamp(34px, 3.5vw, 200px);
 
   span {
     display: block;
@@ -800,7 +801,7 @@ body {
   font-weight: 100;
   width: clamp(217px, 27.986vw, 2170px);
   margin-left: var(--heading-margin-lg);
-  margin-bottom: max(15px, 2.083vw);
+  margin-bottom: max(20px, 2.083vw);
 }
 
 .discovery__subheading {
@@ -925,7 +926,7 @@ body {
 
 .patriotism__img {
   width: 39.722vw;
-  margin: max(20px, 1.389vw) auto 0;
+  margin: max(26px, 1.389vw) auto 0;
   display: inline-block;
 }
 
@@ -1284,6 +1285,7 @@ body {
   font-weight: 700;
   width: 40vw;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .death__img {
